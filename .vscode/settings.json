@@ -1,0 +1,13 @@
+{
+  "sqltools.connections": [
+    {
+      "database": "NEO-parks",
+      "dialect": "PostgreSQL",
+      "name": "Parks",
+      "password": "pass",
+      "port": 5432,
+      "server": "localhost",
+      "username": "postgres"
+    }
+  ]
+}
