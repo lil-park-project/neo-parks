@@ -1,16 +1,12 @@
 require('dotenv').config()
-const pgPromise = require('pg-promise')
+const { Client } = require('pg')
 
-const pgp = pgPromise({})
-
-const config = {
-  host: process.env.POSTGRES_HOST,
-  port: process.env.POSTGRES_PORT,
-  database: process.env.POSTGRES_DB,
-  user: process.env.POSTGRES_USER,
-  password: process.env.POSTGRES_PASSWORD,
-}
-
-const db = pgp(config)
+const db = new Client({
+  host: process.env.PGHOST,
+  port: process.env.PGPORT,
+  database: process.env.PGDB,
+  user: process.env.PGUSER,
+  password: process.env.PGPASSWORD
+})
 
 exports.db = db
