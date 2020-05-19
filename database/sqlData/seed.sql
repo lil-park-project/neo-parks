@@ -1,7 +1,7 @@
 INSERT INTO parkType (parkType)
 VALUES
   ('National'),
-  (S 'tate'),
+  ('State'),
   ('Metro'),
   ('Private');
 INSERT INTO parkCounty (county)
